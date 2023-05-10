@@ -1,0 +1,38 @@
+@model RpgMvc.Models.UsuarioViewModel
+@{
+    ViewBag.Title = "Autenticar"; }
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Mensagem"]</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemErro"]</div>
+}
+<h2>Área de login do Usuário</h2><hr />
+@using (Html.BeginForm("Autenticar", "Usuarios", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">Usuário</label>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Senha</label>
+            <div class="col-md-6">
+                @Html.PasswordFor(model => model.PasswordString, new { @class = "form-control" })
+            </div>
+        </div><br />
+        <input type="submit" value="Acessar" class="btn btn-success" /><br />
+        <div class="form-group">
+            <!-- Outra forma de inclusir um link para uma View-->
+            <p> <a href="/Usuarios">Nunca acessou o sistema? Clique aqui para registrar-se!!!</a> </p>
+        </div>
+    </div>
+}
