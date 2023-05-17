@@ -11,7 +11,7 @@ namespace RpgMvc.Controllers
 {
     public class PersonagensController : Controller
     {
-        public string uriBase = "http://localhost:5073/Personagens/";
+        public string uriBase = "http://alitor.somee.com/RpgApi/Personagens/";
 
 
         [HttpGet]
@@ -182,7 +182,7 @@ namespace RpgMvc.Controllers
 
                if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    TempData["Mensagem"] = string.Format("Personagem Id {0} removido com sucesso!!!", p.Nome, serialized);
+                    TempData["Mensagem"] = string.Format("Personagem Id {0} removido com sucesso!!!", id);
                     return RedirectToAction("Index");
                 }
                 else

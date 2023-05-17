@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "h4dCX2w6/X42cBx6l7qwkxI4PdCS8Gndo7sJX7oI15QNTfK0kb4twu5Aq6P/ldjIk2SCRzgdRLe6h7lCYiMvFA==",
+  "dgSpecHash": "bLBDQUb9AIhigwlI8efj+6uJAiphNk33GSHMTAx1+wCzLFJVYJnlFXfZlOfRYUan0+odbO7xcy4+hYHvbg4rcw==",
   "success": true,
-  "projectFilePath": "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
+  "projectFilePath": "D:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\EtecHAS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\alevi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

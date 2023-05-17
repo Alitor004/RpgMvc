@@ -8,7 +8,7 @@ namespace RpgMvc.Controllers
 {
     public class UsuariosController : Controller
     {
-        public string uriBase = "http://localhost:5073/Usuarios/";
+        public string uriBase = "http://alitor.somee.com/RpgApi/Usuarios/";
 
         [HttpGet]
         public IActionResult Index()
