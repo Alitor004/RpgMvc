@@ -9,49 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RpgMvc
 build_property.RootNamespace = RpgMvc
-build_property.ProjectDir = f:\2DS\Alitor\DSI\Aula04API\RpgMvc\
+build_property.ProjectDir = F:\2DS\Alitor\DSI\Aula04API\RpgMvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = f:\2DS\Alitor\DSI\Aula04API\RpgMvc
+build_property.MSBuildProjectDirectory = F:\2DS\Alitor\DSI\Aula04API\RpgMvc
 build_property._RazorSourceGeneratorDebug = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Home/Index.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Home/Privacy.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/Error.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_LoginPartialRpg.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_LoginPartialRpg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWxScGcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Usuarios/AutenticarUsuario.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Usuarios/AutenticarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQXV0ZW50aWNhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Usuarios/CadastrarUsuario.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Usuarios/CadastrarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ2FkYXN0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/_ViewImports.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/_ViewStart.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_Layout.cshtml]
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z01m3r0ocj
