@@ -1,6 +1,9 @@
+using System.Collections.Generic;
+using System;
+
 namespace RpgMvc.Models
 {
-    public class DisputasViewModel
+    public class DisputaViewModel
     {
         public int Id { get; set; }
         public DateTime? DataDisputa { get; set; }

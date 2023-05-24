@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\2DS\Alitor\DSI\Aula04API\RpgMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Disputas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcHV0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Disputas/IndexHabilidades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcHV0YXNcSW5kZXhIYWJpbGlkYWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Details copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcRGV0YWlscyBjb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/2DS/Alitor/DSI/Aula04API/RpgMvc/Views/Personagens/Details.cshtml]
