@@ -1,10 +1,14 @@
 @model RpgMvc.Models.DisputaViewModel
-@{ViewBag.Title = "Index";}
-@if (@TempData["Mensagem"] != null) {
+@{
+    ViewBag.Title = "Disputa com Habilidade";
+}
+@if (@TempData["Mensagem"] != null)
+{
     <div class="alert alert-success" role="alert">
         @TempData["Mensagem"]</div>
 }
-@if (@TempData["MensagemErro"] != null) {
+@if (@TempData["MensagemErro"] != null)
+{
     <div class="alert alert-danger" role="alert">
         @TempData["MensagemErro"]</div>
 }
@@ -18,25 +22,26 @@
             @Html.DisplayName("Atacante")
             <div class="col-md-6">
                 @Html.DropDownListFor(model => model.AtacanteId, new SelectList(@ViewBag.ListaAtacantes, "Id", "Nome"),
-                    "---Selecione---", new { @class = "form-control" })
-            </div>
+            "---Selecione---", new { @class = "form-control" })</div>
         </div>
         <div class="form-group">
-@Html.DisplayName("Habilidade")
-<div class="col-md-6">
-@Html.DropDownListFor(model => model.HabilidadeId, new SelectList(@ViewBag.ListaHabilidades,
-"Id", "Nome"), "---Selecione---", new { @class = "form-control" })</div></div>
+            @Html.DisplayName("Habilidade")
+            <div class="col-md-6">
+                @Html.DropDownListFor(model => model.HabilidadeId, new SelectList(@ViewBag.ListaHabilidades,
+            "Id", "Nome"), "---Selecione---", new { @class = "form-control" })</div>
+        </div>
         <div class="form-group">
-@Html.DisplayName("Oponente")
-<div class="col-md-6">
-@Html.DropDownListFor(model => model.OponenteId, new SelectList(@ViewBag.ListaOponentes, "Id",
-"Nome"),
-"---Selecione---", new { @class = "form-control" })</div>
-</div><br/>
-<div class="form-group">
-<div class="col-md-offset-2 col-md-6">
-<input type="submit" value="Atacar com Arma!!!" class="btn btn-primary" /></div>
-</div>
-</div>
+            @Html.DisplayName("Oponente")
+            <div class="col-md-6">
+                @Html.DropDownListFor(model => model.OponenteId, new SelectList(@ViewBag.ListaOponentes, "Id",
+            "Nome"),
+            "---Selecione---", new { @class = "form-control" })</div>
+        </div><br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-6">
+                <input type="submit" value="Atacar com Habilidade!!!" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
 }
 <div>@Html.ActionLink("Retornar", "Index", "Personagens")</div>
