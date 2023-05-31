@@ -6,13 +6,12 @@
 @if (@TempData["Mensagem"] != null)
 {
     <div class="alert alert-success" role="alert">
-        @TempData["Mensagem"]</div>
+        @Html.Raw(TempData["Mensagem"])</div>
 }
-<!--Configuração para exibir mensagem de erro -->
 @if (@TempData["MensagemErro"] != null)
 {
     <div class="alert alert-danger" role="alert">
-        @TempData["MensagemErro"]</div>
+        @Html.Raw(TempData["MensagemErro"])</div>
 }
 
 <h2>Criar um Novo Personagem</h2>

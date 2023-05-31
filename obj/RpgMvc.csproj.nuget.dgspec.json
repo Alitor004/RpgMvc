@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj": {}
+    "E:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj": {}
   },
   "projects": {
-    "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj": {
+    "E:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
+        "projectUniqueName": "E:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
         "projectName": "RpgMvc",
-        "projectPath": "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
-        "packagesPath": "C:\\Users\\EtecHAS\\.nuget\\packages\\",
-        "outputPath": "F:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\obj\\",
+        "projectPath": "E:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\RpgMvc.csproj",
+        "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
+        "outputPath": "E:\\2DS\\Alitor\\DSI\\Aula04API\\RpgMvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\EtecHAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

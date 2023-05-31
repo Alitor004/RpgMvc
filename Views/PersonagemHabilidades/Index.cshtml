@@ -2,16 +2,18 @@
 @{
     ViewBag.Title = "Index"; 
 }
+
 @if (@TempData["Mensagem"] != null)
 {
     <div class="alert alert-success" role="alert">
-        @TempData["Mensagem"]</div>
+        @Html.Raw(TempData["Mensagem"])</div>
 }
 @if (@TempData["MensagemErro"] != null)
 {
     <div class="alert alert-danger" role="alert">
-        @TempData["MensagemErro"]</div>
+        @Html.Raw(TempData["MensagemErro"])</div>
 }
+
 <h2>Habilidades do Personagem</h2>
 <table class="table">
     <tr>
@@ -31,8 +33,7 @@
             <td>@Html.DisplayFor(modelItem => item.Personagem.Nome) </td>
             <td>@Html.DisplayFor(modelItem => item.Habilidade.Nome) </td>
             <td>@Html.DisplayFor(modelItem => item.Habilidade.Dano) </td>
-            <td>@Html.ActionLink("Deletar", "Delete"
-            , new {habilidadeId = item.HabilidadeId, personagemId = item.PersonagemId }
+            <td>@Html.ActionLink("Deletar", "Delete", new {habilidadeId = item.HabilidadeId, personagemId = item.PersonagemId }
             , new { onclick = "return confirm('Deseja realmente deletar esta habilidade ?');"})
             </td>
         </tr>
