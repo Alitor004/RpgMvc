@@ -1,0 +1,44 @@
+<!--Namespace da classe de Modelo para esta view-->
+@model IEnumerable<RpgMvc.Models.DisputaViewModel>
+
+@{
+    ViewBag.Title = "Disputas"; 
+}
+
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Html.Raw(@TempData["Mensagem"])</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemErro"]</div>
+}
+
+<!--Título da página para o navegador-->
+<h2>Relação de Disputas</h2>
+<!--Título da página-->
+<table class="table">
+    <tr>
+        <!--Títulos das colunas da tabela-->
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.DataDisputa)</th>
+        <th>@Html.DisplayNameFor(model => model.Narracao)</th>
+        <th>@Html.DisplayNameFor(model => model.Resultados)</th>
+        <th></th>
+    </tr>
+    <!--Looping para escrever os dados na tabela-->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+            <td>@Html.DisplayFor(modelItem => item.DataDisputa)</td>
+            <td>@Html.DisplayFor(modelItem => item.Narracao)</td>
+            <td>@Html.DisplayFor(modelItem => item.Resultados)</td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Apagar Disputas" ,"ApagarDisputas" ,"Disputas", 
+    null ,new { @class = "btn btn-danger", onclick = "return confirm('Desejarealmente apagar as disputas?');"})

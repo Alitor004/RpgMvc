@@ -1,6 +1,20 @@
 @model IEnumerable<RpgMvc.Models.PersonagemViewModel>
 
 @{ViewBag.Title = "Personagens"; }
+
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        
+        @Html.Raw(TempData["Mensagem"])</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @Html.Raw(TempData["MensagemErro"])</div>
+}
+
 <h2>Relação de Personagens</h2>
 <p>
     @Html.ActionLink("Criar Novo Personagem", "Create")
@@ -31,7 +45,10 @@
                 @Html.ActionLink("Editar", "Edit", new { id = item.Id } ) |
                 @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Deletar", "Delete", new { id = item.Id }
-                    ,new { onclick = "return confirm('Deseja realmente deletar este personagem ?');"})
+                    ,new { onclick = "return confirm('Deseja realmente deletar este personagem ?');"}) |
+                @Html.ActionLink("Listar Habilidades", "Index", "PersonagemHabilidades", new { id = item.Id }) |
+                @Html.ActionLink("Atribuir Habilidades", "Create", "PersonagemHabilidades", new { id = item.Id, nome = item.Nome })
+                
             </td>
         </tr>        
     }
@@ -43,4 +60,4 @@
 @Html.ActionLink("Clique aqui para um embate em Grupo!!!", "DisputaGeral", "Disputas",
     null, new { @class = "btn btn-danger"})
 @Html.ActionLink("Zerar ranking e restaurar pontos de vida", "ZerarRankingRestaurarVidas", "Personagens",
-    null, new { @class = "btn btn-secondary", onclick = "return confirm('Deseja realmente realizar esta ação ?');" })
+    null, new { @class = "btn btn-secondary", onclick = "return confirm('Deseja realmente realizar esta ação ?');" }) 

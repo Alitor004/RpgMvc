@@ -1,0 +1,43 @@
+@model IEnumerable<RpgMvc.Models.PersonagemHabilidadeViewModel>
+@{
+    ViewBag.Title = "Index"; 
+}
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Mensagem"]</div>
+}
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemErro"]</div>
+}
+<h2>Habilidades do Personagem</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Personagem")
+        </th>
+        <th>
+            @Html.DisplayName("Habilidade")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Habilidade.Dano)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Personagem.Nome) </td>
+            <td>@Html.DisplayFor(modelItem => item.Habilidade.Nome) </td>
+            <td>@Html.DisplayFor(modelItem => item.Habilidade.Dano) </td>
+            <td>@Html.ActionLink("Deletar", "Delete"
+            , new {habilidadeId = item.HabilidadeId, personagemId = item.PersonagemId }
+            , new { onclick = "return confirm('Deseja realmente deletar esta habilidade ?');"})
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    @Html.ActionLink("Retornar aos Personagens", "Index", "Personagens")
+</div>
