@@ -1,0 +1,28 @@
+@model RpgMvc.Models.ArmaViewModel
+@{
+    ViewBag.Title = "Detalhes da Arma do Personagem";
+}
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Mensagem"]</div>
+}
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemErro"]</div>
+}
+<h2>Armas do Personagem</h2>
+
+    <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
+    <dd>@Html.DisplayFor(model => model.Nome)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Dano)</dt>
+    <dd>@Html.DisplayFor(model => model.Dano)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.PersonagemId)</dt>
+    <dd>@Html.DisplayFor(model => model.PersonagemId)</dd>
+
+<div>
+    @Html.ActionLink("Retornar aos Personagens", "Index", "Personagens")
+</div>

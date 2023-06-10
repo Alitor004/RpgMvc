@@ -21,12 +21,6 @@
     <div class="form-horizontal">
         <hr />
         <div class="form-group">
-            @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
             @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-6">
                 @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
@@ -61,24 +55,6 @@
             @Html.LabelFor(model => model.Inteligencia, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-6">
                 @Html.EditorFor(model => model.Inteligencia, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.Disputas, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.Disputas, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.Vitorias, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.Vitorias, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.Derrotas, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.EditorFor(model => model.Derrotas, new { htmlAttributes = new { @class = "form-control" } })
             </div>
         </div>
         <br/>

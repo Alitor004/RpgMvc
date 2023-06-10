@@ -1,0 +1,8 @@
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\RpgMvc.exe
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\appsettings.Development.json
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\appsettings.json
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\RpgMvc.dll
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\RpgMvc.deps.json
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\RpgMvc.runtimeconfig.json
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\RpgMvc.pdb
+D:\2DS\Alitor\DSI\Aula04API\RpgMvc\Publish\Newtonsoft.Json.dll
