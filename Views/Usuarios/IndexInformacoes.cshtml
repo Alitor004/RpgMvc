@@ -1,0 +1,109 @@
+@model RpgMvc.Models.UsuarioViewModel
+@{
+    ViewBag.Title = "Informações do Usuário";
+}
+@if (@TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">@TempData["Mensagem"]</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">@TempData["MensagemErro"]</div>
+}
+<h2>Detalhes do Usuário</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Username)</dt>
+        <dd>@Html.DisplayFor(model => model.Username)</dd>
+        
+        <dt>@Html.DisplayNameFor(model => model.Perfil)</dt>
+        <dd>@Html.DisplayFor(model => model.Perfil)</dd>
+        
+        <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd>@Html.DisplayFor(model => model.Email)</dd>
+        
+        <dt>@Html.DisplayNameFor(model => model.DataAcesso)</dt>
+        <dd>@Html.DisplayFor(model => model.DataAcesso)</dd>
+    </dl>
+    <button onclick="AlterarEmail();" type="button" class="btn btn-primary">Alterar Email</button>
+    <button onclick=" AbrirModalAlteracaoSenha();" type="button" class="btn btn-primary">Alterar Senha</button>
+</div>
+
+<!--Conteúdo do modal popup-->
+<div class="modal fade bd-example-modal-lg" id="modalInterno" tabindex="-1" role="dialog" aria-labelledby="modalInternoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInternoLabel">Alteração de E-mail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" arialabel="Close"></button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("AlterarEmail", "Usuarios", FormMethod.Post))
+                {
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Id, htmlAttributes: new { @class ="control-label col-md-2" })
+                            <div class="col-md-6">
+                                @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" }})
+                            </div>
+                        </div><br />
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-6">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" }})
+                            </div>
+                        </div><br />
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-6">
+                                <input type="submit" value="Salvar" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal externo -->
+<div class="modal" id="modalExterno" tabindex="-1" role="dialog" arialabelledby="modalExternoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalExternoLabel">@TempData["TituloModalExterno"]
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" arialabel="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bsdismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function AlterarEmail() {
+        $("#modalInterno").modal("show")
+    }
+
+    function AbrirModalAlteracaoSenha() { 
+        $.ajax({ 
+            url: "@Url.Action("ObterDadosAlteracaoSenha", "Usuarios")", 
+            //data: { nomeProp1: valorProp1, nomeProp2: valorProp2, },
+            success: function (retorno) { 
+                $("#modalExterno .modal-dialog .modal-content .modal-body").html(retorno); 
+                $("#modalExterno").modal("show"); 
+            } 
+        }); 
+    }
+
+</script>
