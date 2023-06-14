@@ -51,7 +51,7 @@ namespace RpgMvc.Controllers
         [HttpGet]
         public ActionResult IndexLogin()
         {
-            return View("Autenticar");
+            return View("AutenticarUsuario");
         }
 
         [HttpPost]
