@@ -9,109 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RpgMvc
 build_property.RootNamespace = RpgMvc
-build_property.ProjectDir = D:\2DS\Alex\RpgMvc\
+build_property.ProjectDir = c:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\2DS\Alex\RpgMvc
+build_property.MSBuildProjectDirectory = c:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/2DS/Alex/RpgMvc/Views/Armas/Create.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Armas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Armas/Details.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Armas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Armas/Edit.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Armas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Armas/Index.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Armas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJtYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Disputas/Index.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Disputas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcHV0YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Disputas/IndexDisputas.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Disputas/IndexDisputas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcHV0YXNcSW5kZXhEaXNwdXRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Disputas/IndexHabilidades.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Disputas/IndexHabilidades.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcHV0YXNcSW5kZXhIYWJpbGlkYWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Home/Index.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Home/Privacy.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/PersonagemHabilidades/Create.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/PersonagemHabilidades/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbUhhYmlsaWRhZGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/PersonagemHabilidades/Index.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/PersonagemHabilidades/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbUhhYmlsaWRhZGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Personagens/Create.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Personagens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Personagens/Details.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Personagens/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Personagens/Edit.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Personagens/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Personagens/Index.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Personagens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWdlbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Shared/Error.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Shared/_LoginPartialRpg.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Shared/_LoginPartialRpg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWxScGcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Usuarios/AutenticarUsuario.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Usuarios/AutenticarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQXV0ZW50aWNhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Usuarios/CadastrarUsuario.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Usuarios/CadastrarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ2FkYXN0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Usuarios/IndexInformacoes.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Usuarios/IndexInformacoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXhJbmZvcm1hY29lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Usuarios/_AlteracaoSenha.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Usuarios/_AlteracaoSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX0FsdGVyYWNhb1NlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/_ViewImports.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/_ViewStart.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/2DS/Alex/RpgMvc/Views/Shared/_Layout.cshtml]
+[c:/Users/alevi/OneDrive/Área de Trabalho/Estudos/RpgMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z01m3r0ocj

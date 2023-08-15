@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XQc7tRMcp1JvKuPeJCBREsJh1Hxvzme9rHBTCJKMt/2D+QjrGV+9lrl/MXM0qXaGzvXxbcYI0wNf+uEW+VgnQA==",
+  "dgSpecHash": "+8bjTO7+tRXS8A4mQwoUIBkd3rBiYJGGsqdg8+WnGrJBTMuCXnvnK97ichvo/BsuARvogT97SwJcwRs3gKqemQ==",
   "success": true,
-  "projectFilePath": "D:\\2DS\\Alex\\RpgMvc\\RpgMvc.csproj",
+  "projectFilePath": "C:\\Users\\alevi\\OneDrive\\Área de Trabalho\\Estudos\\RpgMvc\\RpgMvc.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\etechas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\alevi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -73,7 +73,7 @@ namespace RpgMvc.Controllers
                     UsuarioViewModel uLogado = JsonConvert.DeserializeObject<UsuarioViewModel>(serialized);
                     HttpContext.Session.SetString("SessionTokenUsuario", uLogado.Token);
 
-                    HttpContext.Session.SetString("SessionUsername", u.Username);
+                    HttpContext.Session.SetString("SessionUsername", uLogado.Username);
 
                     TempData["Mensagem"] = string.Format("Bem-vindo {0}!!!", uLogado.Username);
                     return RedirectToAction("Index", "Personagens");
@@ -204,6 +204,91 @@ namespace RpgMvc.Controllers
                 return Json(ex.Message);
             }
         }
+
+        [HttpPost]
+        public async Task<ActionResult> EnviarFoto(UsuarioViewModel u)
+        {
+            try
+            {
+                /*O trecho comentado é um exemplo para caso fosse necessário   
+                salvar a imagem em uma pasta do Sistema Operacional ou na rede.*/
+                if (Request.Form.Files.Count == 0)
+                    throw new System.Exception("Selecione o arquivo.");
+                else
+                {
+                    var file = Request.Form.Files[0];
+                    var fileName = Path.GetFileName(file.FileName);
+                    string nomeArquivoSemExtensao = Path.GetFileNameWithoutExtension(fileName);
+                    var extensao = Path.GetExtension(fileName);
+
+                    if (extensao != ".jpg" && extensao != ".jpeg" && extensao != ".png")
+                        throw new System.Exception("O Arquivo selecionado não é uma foto.");
+
+                    //var pastaUpload - @"\" + "";
+                    //var path = Path.Combine(pastaUpload, fileName);
+                    using (var ms = new MemoryStream())
+                    {
+                        file.CopyTo(ms);
+                        u.Foto = ms.ToArray();
+                        //string s = Convert.ToBase64String(fileBytes); //Escrever bytes numa string
+                        //System.IO.File.WriteAllBytes(path, ms.ToArray()); //Escreve arquivo em uma pasta
+                    }
+                }
+
+                HttpClient httpClient = new HttpClient();
+                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                string uriComplementar = "AtualizarFoto";
+                var content = new StringContent(JsonConvert.SerializeObject(u));
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+                HttpResponseMessage response = await httpClient.PutAsync(uriBase + uriComplementar, content);
+                string serialized = await response.Content.ReadAsStringAsync();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    TempData["Mensagem"] = "Foto enviada com sucesso";
+                else
+                    throw new System.Exception(serialized);
+
+            }
+            catch (System.Exception ex)
+            {
+                TempData["MensagemErro"] = ex.Message;
+            }
+            return RedirectToAction("IndexInformacoes");
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> BaixarFoto()
+        {
+            try
+            {
+                HttpClient httpClient = new HttpClient();
+                string login = HttpContext.Session.GetString("SessionUsername");
+                string uriComplementar = $"GetByLogin/{login}";
+                HttpResponseMessage response = await httpClient.GetAsync(uriBase + uriComplementar);
+                string serialized = await response.Content.ReadAsStringAsync();
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    UsuarioViewModel viewModel = await
+                    Task.Run(() => JsonConvert.DeserializeObject<UsuarioViewModel>(serialized));
+                    //string contentType = "application/image";
+                    string contentType = System.Net.Mime.MediaTypeNames.Application.Octet;
+                    byte[] fileBytes = viewModel.Foto;
+                    string fileName = $"Foto{viewModel.Username}_{DateTime.Now:ddMMyyyyHHmmss}.png"; // + extensao;
+                    return File(fileBytes, contentType, fileName);
+                }
+                else
+                    throw new System.Exception(serialized);
+            }
+            catch (System.Exception ex)
+            {
+                TempData["MensagemErro"] = ex.Message;
+                return RedirectToAction("IndexInformacoes");
+            }
+        }
+
 
 
 

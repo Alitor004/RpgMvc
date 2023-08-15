@@ -140,3 +140,41 @@ D:\2DS\Alex\RpgMvc\obj\Debug\net7.0\refint\RpgMvc.dll
 D:\2DS\Alex\RpgMvc\obj\Debug\net7.0\RpgMvc.pdb
 D:\2DS\Alex\RpgMvc\obj\Debug\net7.0\RpgMvc.genruntimeconfig.cache
 D:\2DS\Alex\RpgMvc\obj\Debug\net7.0\ref\RpgMvc.dll
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Publish\web.config
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\appsettings.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Publish\appsettings.Development.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Publish\appsettings.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Publish\RpgMvc.deps.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Publish\RpgMvc.runtimeconfig.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.staticwebassets.runtime.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.exe
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.deps.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.runtimeconfig.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.dll
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\RpgMvc.pdb
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.csproj.AssemblyReference.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.AssemblyInfoInputs.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.AssemblyInfo.cs
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.csproj.CoreCompileInputs.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.RazorAssemblyInfo.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.RazorAssemblyInfo.cs
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets\msbuild.RpgMvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets\msbuild.build.RpgMvc.props
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RpgMvc.props
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RpgMvc.props
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\scopedcss\bundle\RpgMvc.styles.css
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\scopedcss\projectbundle\RpgMvc.bundle.scp.css
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.csproj.CopyComplete
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.dll
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\refint\RpgMvc.dll
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.pdb
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\RpgMvc.genruntimeconfig.cache
+C:\Users\alevi\OneDrive\Área de Trabalho\Estudos\RpgMvc\obj\Debug\net7.0\ref\RpgMvc.dll
