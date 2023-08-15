@@ -7,46 +7,72 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RpgMvc</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Personagens" asp-action="Index">Personagens</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Disputas" asp-action="IndexDisputas">Disputas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Armas" asp-action="Index">Armas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="IndexInformacoes">Informações do Usuário</a>
-                            </li>
-                            <!--<li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Disputas
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdowm">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="Index">Disputa com Arma</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="IndexHabilidades">Disputa com Habilidade</a>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="DisputaGeral">Embate em Grupo</a>
-                                </div>
-                            </li>-->
-                        </ul>
-                        <partial name="_LoginPartialRpg"/>
+            @{
+                var nomeSessao = new Byte[20];
+                bool nomeOk = Context.Session.TryGetValue("SessionIdUsuario", out nomeSessao);
+                string sessao = string.Empty;
+
+                var nomeSessaoPerfil = new Byte[20];
+                bool perfilOk =Context.Session.TryGetValue("SessionIdUsuario", out nomeSessaoPerfil);
+                string sessaoPerfil = string.Empty;
+
+                if(nomeOk)
+                    sessao = System.Text.Encoding.UTF8.GetString(nomeSessao);
+
+                if(perfilOk)
+                    sessaoPerfil = System.Text.Encoding.UTF8.GetString(nomeSessaoPerfil);
+
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RpgMvc</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul class="navbar-nav flex-grow-1">
+                                @if(!string.IsNullOrEmpty(sessao))
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Personagens" asp-action="Index">Personagens</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Disputas" asp-action="IndexDisputas">Disputas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Armas" asp-action="Index">Armas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="IndexInformacoes">Informações do Usuário</a>
+                                    </li>
+                                    <!--<li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Disputas
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdowm">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="Index">Disputa com Arma</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="IndexHabilidades">Disputa com Habilidade</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Disputas" asp-action="DisputaGeral">Embate em Grupo</a>
+                                        </div>
+                                    </li>-->
+                                }
+                            </ul>
+                            @if (string.IsNullOrEmpty(sessao))
+                            {
+                                <partial name="_LoginPartialRpg"/>
+                            }
+                            else
+                            {
+                                <a class="" asp-area="" asp-controller="Usuarios" asp-action="Sair">Sair</a>
+                            }
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            }
         </header>
         <div class="container">
             <main role="main" class="pb-3">

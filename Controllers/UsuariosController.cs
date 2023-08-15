@@ -71,9 +71,12 @@ namespace RpgMvc.Controllers
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     UsuarioViewModel uLogado = JsonConvert.DeserializeObject<UsuarioViewModel>(serialized);
-                    HttpContext.Session.SetString("SessionTokenUsuario", uLogado.Token);
 
+                    HttpContext.Session.SetString("SessionTokenUsuario", uLogado.Token);
                     HttpContext.Session.SetString("SessionUsername", uLogado.Username);
+
+                    HttpContext.Session.SetString("SessionPerfilUsuario", uLogado.Perfil);
+                    HttpContext.Session.SetString("SessionIdUsuario", uLogado.Id.ToString());
 
                     TempData["Mensagem"] = string.Format("Bem-vindo {0}!!!", uLogado.Username);
                     return RedirectToAction("Index", "Personagens");
@@ -288,6 +291,8 @@ namespace RpgMvc.Controllers
                 return RedirectToAction("IndexInformacoes");
             }
         }
+
+        
 
 
 
