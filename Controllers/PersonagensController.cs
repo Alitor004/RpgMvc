@@ -19,6 +19,7 @@ namespace RpgMvc.Controllers
         {
             try
             {
+                //Tenho que comentar algo mas n faço a minima ideia de o q.
                 string uriComplementar = "GetAll";
                 HttpClient httpClient = new HttpClient();
                 string token = HttpContext.Session.GetString("SessionTokenUsuario");
@@ -27,16 +28,20 @@ namespace RpgMvc.Controllers
                 HttpResponseMessage response = await httpClient.GetAsync(uriBase + uriComplementar);
                 string serialized = await response.Content.ReadAsStringAsync();
 
-                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                
+                /*if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     List<PersonagemViewModel> listaPersonagens = await Task.Run(() =>
                         JsonConvert.DeserializeObject<List<PersonagemViewModel>>(serialized));
 
                     return View(listaPersonagens);
+                }*/
+                if(string.IsNullOrEmpty(HttpContext.Session.GetString("SessionIdUsuario")))
+                {
+                    return RedirectToAction("Sair", "Usuario");
                 }
                 else
                     throw new System.Exception(serialized);
-
             }
             catch (System.Exception ex)
             {
